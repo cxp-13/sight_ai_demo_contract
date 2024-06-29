@@ -1,3 +1,6 @@
+# Deployment situation
+OracleModule#Oracle - 0xb4a0CEDE9f7De377913085e7035901c784843cdB
+
 # Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.

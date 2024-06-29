@@ -49,6 +49,11 @@ contract Oracle is Ownable{
         emit ComputationCompleted(requestId, result);
     }
 
+    function getComputationData(bytes32 requestId) public view returns (uint256[] memory, bytes memory, uint256) {
+        Computation memory computation = computations[requestId];
+        return (computation.numbers, computation.logic, computation.result);
+    }
+
     function withdraw() public onlyOwner {
         payable(msg.sender).transfer(address(this).balance);
     }
